@@ -10,7 +10,7 @@ Nostr allows users to immigrate to other applications without social data loss, 
 
 ## Contributing
 
-This project is in alpha, so feel free to fork and implement your features. Contact me on Discord (stebeus_) if you want to submit your pull request.
+This project is in alpha, so feel free to fork and implement your features. Contact me on Discord (3deltaangle) if you want to submit your pull request.
 
 ## License
 
