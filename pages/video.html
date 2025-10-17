@@ -5,43 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video - Tubestr</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
   </head>
   <body>
     <header>
-      <a class="logo" href="/"
-        >Tubestr <span class="logo-dev-stage">demo</span></a
-      >
-      <input type="search" class="search-bar" placeholder="Search..." />
+      <a class="logo" href="/"> Tubestr <span class="dev-stage">demo</span> </a>
+      <input class="search-bar" type="search" placeholder="Search..." />
       <nav class="nav-user">
         <ul>
           <li><button class="btn-theme">Switch theme</button></li>
           <li><button class="btn-upload">Upload (W.I.P.)</button></li>
           <li>
             <button class="btn-user">
-              <a href="account.html">Account</a>
+              <a href="./pages/account.html">Account</a>
             </button>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="content-video">
-        <div class="video-player"></div>
-        <div class="video-details">
-          <section class="video-header">
-            <h1>Hello, world!</h1>
-            <div class="video-channel">
-              <a class="video-author" href="#">Stebeus</a>
-              <button class="btn-follow">Follow</button>
-            </div>
-            <div class="video-rating">
-              <button>Like</button>
-              <button>Dislike</button>
-            </div>
-            <button>Share</button>
-          </section>
-          <section class="video-description">
+      <div class="video-primary">
+        <video class="video-player" width="850" height="450" controls autoplay>
+          <source
+            src="../assets/floral-aquarius-theater.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <section class="video-details">
+          <h1>Hello, world!</h1>
+          <div class="video-channel">
+            <a class="video-author" href="#">Stebeus</a>
+            <button class="btn-follow">Follow</button>
+          </div>
+          <div class="video-rating">
+            <button>Like</button>
+            <button>Dislike</button>
+          </div>
+          <button>Share</button>
+          <section class="video-details">
             <h2>Description</h2>
             <p class="video-views">No views</p>
             <p class="video-date">2025/10/17</p>
@@ -51,15 +52,16 @@
             <h2>Comments</h2>
             <p>Work in progress...</p>
           </section>
-        </div>
+        </section>
       </div>
-      <div class="content-related">
+      <div class="video-related">
+        <h2>Related videos</h2>
         <div class="video-card">
-          <img class="video-thumbnail" />
+          <img class="video-thumbnail" href=".assets/" alt="Video thumbnail" />
           <div class="video-info">
-            <a class="video-title" href="#">Title</a>
+            <a class="video-title" href="pages/video.html">Title</a>
             <div class="video-meta">
-              <a class="video-author" href="#">Stebeus</a>
+              <a class="video-author" href="pages/video.html">Stebeus</a>
               <p class="video-views">No views</p>
               <p class="video-date">2025/10/17</p>
             </div>
@@ -68,9 +70,11 @@
       </div>
     </main>
     <aside>
-      <ul>
-        <li><a href="/">Home</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </nav>
     </aside>
     <footer>
       <a

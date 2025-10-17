@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tubestr</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
   </head>
   <body>
     <header>
-      <a class="logo" href="/"
-        >Tubestr <span class="logo-dev-stage">demo</span></a
-      >
-      <input type="search" class="search-bar" placeholder="Search..." />
+      <a class="logo" href="/"> Tubestr <span class="dev-stage">demo</span> </a>
+      <input class="search-bar" type="search" placeholder="Search..." />
       <nav class="nav-user">
         <ul>
           <li><button class="btn-theme">Switch theme</button></li>
@@ -26,9 +24,9 @@
       </nav>
     </header>
     <main>
-      <div class="content-grid">
+      <div class="video-grid">
         <div class="video-card">
-          <img class="video-thumbnail" />
+          <img class="video-thumbnail" href=".assets/" alt="Video thumbnail" />
           <div class="video-info">
             <a class="video-title" href="pages/video.html">Title</a>
             <div class="video-meta">
@@ -41,9 +39,11 @@
       </div>
     </main>
     <aside>
-      <ul>
-        <li><a href="/">Home</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </nav>
     </aside>
     <footer>
       <a
