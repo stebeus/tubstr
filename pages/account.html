@@ -10,20 +10,22 @@
   <body>
     <a href="/">Return to home</a>
     <main>
-      <section class="login">
-        <h2>Log in</h2>
-        <form>
-          <input type="password" placeholder="Paste nostr private key" />
-          <button type="submit">Log in</button>
-        </form>
-      </section>
-      <section class="register">
-        <h2>Register</h2>
-        <form>
-          <input type="text" placeholder="Username" />
-          <button type="submit">Register</button>
-        </form>
-      </section>
+      <div class="container-account">
+        <section class="account-box login">
+          <h2>Log in</h2>
+          <form>
+            <input type="password" placeholder="Paste nostr private key" />
+            <button type="submit">Log in</button>
+          </form>
+        </section>
+        <section class="account-box register">
+          <h2>Register</h2>
+          <form>
+            <input type="text" placeholder="Username" />
+            <button type="submit">Register</button>
+          </form>
+        </section>
+      </div>
     </main>
     <script src="/js/index.js"></script>
   </body>
