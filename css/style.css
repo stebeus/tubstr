@@ -116,10 +116,14 @@ main .video-related {
   padding: 0 1rem;
 }
 
+.home-return-link {
+  margin: 1rem;
+}
+
 main .container-account {
   display: flex;
   gap: 2rem;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 main .account-box {
