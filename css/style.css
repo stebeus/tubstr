@@ -34,3 +34,24 @@ video {
   max-width: 100%;
   display: block;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--txt);
+  padding: .5rem;
+  background-color: var(--bg);
+}
+
+header .search-bar {
+  width: 32rem;
+  padding: .25rem
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+}
