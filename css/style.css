@@ -61,6 +61,47 @@ header nav ul {
   flex: 1;
 }
 
+main {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+main .video-primary {
+  border: 1px solid var(--txt);
+}
+
+main .video-primary .video-details {
+  padding: 1rem;
+}
+
+main .video-primary .video-box {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+main .video-primary .video-header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--txt);
+}
+
+main .video-primary .video-description {
+  overflow-y: auto;
+  border: 1px solid var(--txt);
+  max-height: 500px
+}
+
+main .video-primary .comment-section {
+  border: 1px solid var(--txt);
+}
+
+main .video-related {
+  border: 1px solid var(--txt);
+  width: 22rem;
+  padding: 0 1rem;
+}
+
 aside {
   order: -1;
   border-right: 1px solid var(--txt);
