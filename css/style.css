@@ -55,3 +55,15 @@ header nav ul {
   display: flex;
   gap: 1rem;
 }
+
+.container {
+  display: flex;
+}
+
+aside {
+  order: -1;
+  border-right: 1px solid var(--txt);
+  width: 10rem;
+  padding: 1rem;
+  background-color: var(--bg);
+}
