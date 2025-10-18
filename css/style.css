@@ -67,6 +67,20 @@ main {
   margin: 1rem auto;
 }
 
+main .video-grid {
+  display: grid;
+  grid-template-columns: 287px 287px 287px 287px;
+  grid-template-rows: 200px 200px 200px 200px;
+  gap: 1rem;
+  border: 1px solid var(--txt);
+  width: 77rem;
+  padding: 1rem;
+}
+
+main .video-grid .video-card {
+  border: 1px solid var(--txt);
+}
+
 main .video-primary {
   border: 1px solid var(--txt);
 }
