@@ -67,3 +67,10 @@ aside {
   padding: 1rem;
   background-color: var(--bg);
 }
+
+footer {
+  margin-top: auto;
+  border-top: 1px solid var(--txt);
+  padding: .5rem;
+  text-align: center;
+}
