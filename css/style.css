@@ -58,6 +58,7 @@ header nav ul {
 
 .container {
   display: flex;
+  flex: 1;
 }
 
 aside {
