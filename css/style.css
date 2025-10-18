@@ -102,6 +102,26 @@ main .video-related {
   padding: 0 1rem;
 }
 
+main .container-account {
+  display: flex;
+  gap: 2rem;
+  min-height: 90vh;
+}
+
+main .account-box {
+  border: 1px solid var(--txt);
+  width: 35rem;
+  padding: 1rem;
+}
+
+main .account-box input,
+main .account-box button {
+  display: block;
+  margin-top: .5rem;
+  width: 100%;
+  padding: .5rem;
+}
+
 aside {
   order: -1;
   border-right: 1px solid var(--txt);
