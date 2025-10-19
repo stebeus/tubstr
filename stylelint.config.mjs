@@ -28,56 +28,74 @@ export default {
     'order/order': ['custom-properties', 'declarations'],
     'order/properties-order': [
       [
-        // Layout / Box Model
-        'display',
+        /* Positioning */
         'position',
         'top',
         'right',
         'bottom',
         'left',
+        'z-index',
+
+        /* Display & Flow */
+        'display',
+        'visibility',
         'float',
         'clear',
-        'z-index',
         'overflow',
         'overflow-x',
         'overflow-y',
 
-        // Flex / Grid
+        /* Flex */
         'flex',
         'flex-grow',
         'flex-shrink',
         'flex-basis',
         'flex-direction',
         'flex-wrap',
-        'justify-content',
-        'align-items',
-        'align-content',
-        'align-self',
-        'order',
+        'flex-flow',
 
+        /* Grid */
         'grid',
-        'grid-template-columns',
+        'grid-template',
         'grid-template-rows',
+        'grid-template-columns',
         'grid-template-areas',
-        'grid-auto-columns',
         'grid-auto-rows',
+        'grid-auto-columns',
         'grid-auto-flow',
-        'grid-gap',
+        'grid-row',
+        'grid-row-start',
+        'grid-row-end',
+        'grid-column',
+        'grid-column-start',
+        'grid-column-end',
+        'grid-area',
 
+        /* Flex/Grid Alignment & Spacing */
+        'order',
+        'align-content',
+        'align-items',
+        'align-self',
+        'justify-content',
+        'justify-items',
+        'justify-self',
+        'place-content',
+        'place-items',
+        'place-self',
         'gap',
         'row-gap',
         'column-gap',
 
-        // Box Dimensions
+        /* Box Model / Dimensions */
+        'box-sizing',
         'width',
         'min-width',
         'max-width',
         'height',
         'min-height',
         'max-height',
-        'box-sizing',
 
-        // Multi-Column Layout
+        /* Multi-Column Layout */
         'columns',
         'column-width',
         'column-count',
@@ -87,20 +105,19 @@ export default {
         'column-rule-style',
         'column-rule-color',
 
-        // Margin & Padding
+        /* Spacing */
         'margin',
         'margin-top',
         'margin-right',
         'margin-bottom',
         'margin-left',
-
         'padding',
         'padding-top',
         'padding-right',
         'padding-bottom',
         'padding-left',
 
-        // Border & Outline
+        /* Borders & Outline */
         'border',
         'border-width',
         'border-style',
@@ -111,56 +128,44 @@ export default {
         'border-left',
         'border-radius',
         'outline',
-        'outline-width',
-        'outline-style',
-        'outline-color',
+        'outline-offset',
 
-        // Background
+        /* Background */
         'background',
         'background-color',
         'background-image',
+        'background-repeat',
         'background-position',
         'background-size',
-        'background-repeat',
         'background-clip',
         'background-origin',
         'background-attachment',
 
-        // Typography / Text
+        /* Typography */
         'color',
         'font',
         'font-family',
         'font-size',
         'font-weight',
         'font-style',
+        'font-variant',
         'line-height',
         'letter-spacing',
         'text-align',
-        'text-decoration',
         'text-transform',
-        'text-shadow',
+        'text-decoration',
+        'text-indent',
         'white-space',
-        'word-spacing',
         'word-break',
-        'overflow-wrap',
+        'word-spacing',
 
-        // Visual / Effects
-        'box-shadow',
+        /* Visual Effects */
         'opacity',
-        'visibility',
-        'cursor',
+        'box-shadow',
+        'mix-blend-mode',
         'filter',
-        'transition',
-        'transition-property',
-        'transition-duration',
-        'transition-timing-function',
-        'transform',
-        'transform-origin',
 
-        // Misc / User Interaction
-        'pointer-events',
-        'content',
-        'clip-path',
+        /* Motion */
         'animation',
         'animation-name',
         'animation-duration',
@@ -168,6 +173,25 @@ export default {
         'animation-delay',
         'animation-iteration-count',
         'animation-direction',
+        'animation-fill-mode',
+        'animation-play-state',
+
+        'transform',
+        'transform-origin',
+
+        'transition',
+        'transition-property',
+        'transition-duration',
+        'transition-timing-function',
+        'transition-delay',
+
+        /* Miscellaneous */
+        'cursor',
+        'pointer-events',
+        'content',
+        'quotes',
+        'user-select',
+        'resize',
       ],
       {
         unspecified: 'bottom',
