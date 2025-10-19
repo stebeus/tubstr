@@ -51,11 +51,11 @@ video {
 /* ========== HEADER ========== */
 
 header {
-  display: flex;
   position: sticky;
   top: 0;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: .5rem;
   border-bottom: 1px solid var(--txt);
   background-color: var(--bg);
@@ -88,8 +88,8 @@ main {
 
 main .video-grid {
   display: grid;
-  grid-template-columns: 287px 287px 287px 287px;
   grid-template-rows: 200px 200px 200px 200px;
+  grid-template-columns: 287px 287px 287px 287px;
   gap: 1rem;
   width: 77rem;
   padding: 1rem;
