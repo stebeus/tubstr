@@ -10,8 +10,8 @@
 /* ========== GLOBAL ========== */
 
 :root {
-  --bg: hsl(0 0 100);
-  --txt: hsl(0 0 30);
+  --bg: hsl(0deg 0 100);
+  --txt: hsl(0deg 0 30);
   --ff: sans-serif;
   --ff-body: 1rem/1.5em var(--ff);
 }
@@ -27,8 +27,8 @@
 * {
   margin: 0;
   padding: 0;
-  font: inherit;
   color: inherit;
+  font: inherit;
 }
 
 body {
@@ -36,28 +36,28 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--bg);
-  font: var(--ff-body);
   color: var(--txt);
+  font: var(--ff-body);
 }
 
 img,
 picture,
 svg,
 video {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 /* ========== HEADER ========== */
 
 header {
+  display: flex;
   position: sticky;
   top: 0;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--txt);
   padding: .5rem;
+  border-bottom: 1px solid var(--txt);
   background-color: var(--bg);
 }
 
@@ -91,9 +91,9 @@ main .video-grid {
   grid-template-columns: 287px 287px 287px 287px;
   grid-template-rows: 200px 200px 200px 200px;
   gap: 1rem;
-  border: 1px solid var(--txt);
   width: 77rem;
   padding: 1rem;
+  border: 1px solid var(--txt);
 }
 
 main .video-grid .video-card {
@@ -112,8 +112,8 @@ main .video-primary .video-details {
 }
 
 main .video-primary .video-box {
-  padding: 1rem;
   margin-top: 1rem;
+  padding: 1rem;
 }
 
 main .video-primary .video-header {
@@ -124,8 +124,8 @@ main .video-primary .video-header {
 
 main .video-primary .video-description {
   overflow-y: auto;
-  border: 1px solid var(--txt);
-  max-height: 500px
+  max-height: 500px;
+  border: 1px solid var(--txt)
 }
 
 main .video-primary .comment-section {
@@ -134,9 +134,9 @@ main .video-primary .comment-section {
 
 /* Related Videos */
 main .video-related {
-  border: 1px solid var(--txt);
   width: 22rem;
   padding: 0 1rem;
+  border: 1px solid var(--txt);
 }
 
 /* --- Account creation page --- */
@@ -152,16 +152,16 @@ main .container-account {
 }
 
 main .account-box {
-  border: 1px solid var(--txt);
   width: 35rem;
   padding: 1rem;
+  border: 1px solid var(--txt);
 }
 
 main .account-box input,
 main .account-box button {
   display: block;
-  margin-top: .5rem;
   width: 100%;
+  margin-top: .5rem;
   padding: .5rem;
 }
 
@@ -169,9 +169,9 @@ main .account-box button {
 
 aside {
   order: -1;
-  border-right: 1px solid var(--txt);
   width: 10rem;
   padding: 1rem;
+  border-right: 1px solid var(--txt);
   background-color: var(--bg);
 }
 
@@ -179,7 +179,7 @@ aside {
 
 footer {
   margin-top: auto;
-  border-top: 1px solid var(--txt);
   padding: .5rem;
+  border-top: 1px solid var(--txt);
   text-align: center;
 }
