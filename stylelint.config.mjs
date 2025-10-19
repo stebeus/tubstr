@@ -3,24 +3,24 @@ export default {
   extends: ['stylelint-config-standard'],
   plugins: ['stylelint-order', 'stylelint-plugin-defensive-css'],
   rules: {
-    'color-named': 'never',
     'color-no-hex': true,
     'function-disallowed-list': ['rgb', 'hwb', 'lab', 'lch', 'oklab', 'oklch'],
 
     'declaration-property-unit-allowed-list': {
-      '/^border|^outline/': ['px'],
+      '/^border|^outline/': ['%', 'deg', 'px'],
       '/^gap|^margin|^padding/': ['em', 'rem'],
     },
     'unit-allowed-list': [
-      'px',
-      'vw',
-      'vh',
       '%',
-      'em',
-      'rem',
       'ch',
       'deg',
+      'em',
+      'fr',
       'ms',
+      'px',
+      'rem',
+      'vh',
+      'vw',
     ],
 
     /* ========== PLUGINS ========== */
