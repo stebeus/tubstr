@@ -8,24 +8,24 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
   </head>
   <body>
-    <a href="/" class="home-return-link">Return to home</a>
+    <a href="/" class="return-home-link">Return to home</a>
     <main>
-      <div class="container-account">
-        <section class="account-box login">
-          <h2>Log in</h2>
-          <form>
-            <input type="password" placeholder="Paste nostr private key" />
-            <button type="submit">Log in</button>
-          </form>
-        </section>
-        <section class="account-box register">
-          <h2>Register</h2>
-          <form>
-            <input type="text" placeholder="Username" />
-            <button type="submit">Register</button>
-          </form>
-        </section>
-      </div>
+      <section class="account-column">
+        <h2>Log in</h2>
+        <form>
+          <input type="password" placeholder="Paste your nostr private key" />
+          <button type="submit">Log in</button>
+        </form>
+      </section>
+      <section class="account-column">
+        <h2>Register new account</h2>
+        <form>
+          <input type="text" placeholder="Type your username" />
+          <button type="submit">
+            Register and automatically generate my nostr private key
+          </button>
+        </form>
+      </section>
     </main>
     <script src="/js/index.js"></script>
   </body>
