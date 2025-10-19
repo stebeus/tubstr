@@ -1,0 +1,25 @@
+{
+  "name": "tubestr",
+  "version": "0.0.1",
+  "description": "LBRY and nostr open source video platform",
+  "homepage": "https://github.com/stebeus/tubestr#readme",
+  "bugs": {
+    "url": "https://github.com/stebeus/tubestr/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stebeus/tubestr.git"
+  },
+  "license": "MIT",
+  "author": "stebeus",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "stylelint-config-standard": "^39.0.1",
+    "stylelint-order": "^7.0.0",
+    "stylelint-plugin-defensive-css": "^1.0.4"
+  }
+}
