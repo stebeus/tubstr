@@ -23,11 +23,9 @@ body {
   display: grid;
   flex-grow: 1;
   grid-template:
-    'header header'
-    'sidebar main'
-    'footer footer';
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 10rem 1fr;
+    'header header' auto
+    'sidebar main' 1fr
+    'footer footer' auto / 10rem 1fr;
   min-height: 100vh;
   background-color: var(--bg);
   color: var(--txt);
