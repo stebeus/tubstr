@@ -1,22 +1,11 @@
-/** 
- * CSS DIRECTORY
- *     1. GLOBAL 
- *     2. HEADER
- *     3. MAIN
- *     4. SIDEBAR
- *     5. FOOTER
- */
-
-/* ========== GLOBAL ========== */
-
 :root {
   --bg: hsl(0deg 0 100);
-  --txt: hsl(0deg 0 30);
+  --txt: hsl(0deg 0 0);
   --ff: sans-serif;
-  --ff-body: 1rem/1.5em var(--ff);
+  --ff-default: 1rem/1.5em var(--ff);
+  --ff-h1: bold 2rem/1.5em var(--ff);
+  --ff-h2: bold 1.25rem/1.5em var(--ff);
 }
-
-/* --- Reset --- */
 
 *,
 *::before,
@@ -27,17 +16,22 @@
 * {
   margin: 0;
   padding: 0;
-  color: inherit;
   font: inherit;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  flex-grow: 1;
+  grid-template:
+    'header header'
+    'sidebar main'
+    'footer footer';
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 10rem 1fr;
   min-height: 100vh;
   background-color: var(--bg);
   color: var(--txt);
-  font: var(--ff-body);
+  font: var(--ff-default);
 }
 
 img,
@@ -48,138 +42,46 @@ video {
   max-width: 100%;
 }
 
-/* ========== HEADER ========== */
+h1 {
+  font: var(--ff-h1)
+}
+
+h2 {
+  font: var(--ff-h2)
+}
+
+ul {
+  list-style: none;
+}
 
 header {
-  position: sticky;
-  top: 0;
   display: flex;
+  grid-area: header;
   align-items: center;
   justify-content: space-between;
-  padding: .5rem;
-  border-bottom: 1px solid var(--txt);
-  background-color: var(--bg);
+  padding: .5rem 1rem;
+  background-color: red;
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
 }
 
 header .search-bar {
-  width: 32rem;
-  padding: .25rem
-}
-
-header nav ul {
-  display: flex;
-  gap: 1rem;
-}
-
-/* ========== MAIN ========== */
-
-.container {
-  display: flex;
-  flex: 1;
-}
-
-main {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem auto;
-}
-
-/* --- Home Page --- */
-
-main .video-grid {
-  display: grid;
-  grid-template-rows: 200px 200px 200px 200px;
-  grid-template-columns: 287px 287px 287px 287px;
-  gap: 1rem;
-  width: 77rem;
-  padding: 1rem;
-  border: 1px solid var(--txt);
-}
-
-main .video-grid .video-card {
-  border: 1px solid var(--txt);
-}
-
-/* --- Video page --- */
-
-/* Video Primary */
-main .video-primary {
-  border: 1px solid var(--txt);
-}
-
-main .video-primary .video-details {
-  padding: 1rem;
-}
-
-main .video-primary .video-box {
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
-main .video-primary .video-header {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid var(--txt);
-}
-
-main .video-primary .video-description {
-  overflow-y: auto;
-  max-height: 500px;
-  border: 1px solid var(--txt)
-}
-
-main .video-primary .comment-section {
-  border: 1px solid var(--txt);
-}
-
-/* Related Videos */
-main .video-related {
-  width: 22rem;
-  padding: 0 1rem;
-  border: 1px solid var(--txt);
-}
-
-/* --- Account creation page --- */
-
-.home-return-link {
-  margin: 1rem;
-}
-
-main .container-account {
-  display: flex;
-  gap: 2rem;
-  min-height: 80vh;
-}
-
-main .account-box {
   width: 35rem;
-  padding: 1rem;
-  border: 1px solid var(--txt);
+  padding-left: .25rem;
 }
 
-main .account-box input,
-main .account-box button {
-  display: block;
-  width: 100%;
-  margin-top: .5rem;
-  padding: .5rem;
+.sidebar {
+  grid-area: sidebar;
+  padding: .25rem 1rem;
+  background-color: lime;
 }
-
-/* ========== SIDEBAR ========== */
-
-aside {
-  order: -1;
-  width: 10rem;
-  padding: 1rem;
-  border-right: 1px solid var(--txt);
-  background-color: var(--bg);
-}
-
-/* ========== FOOTER ========== */
 
 footer {
-  margin-top: auto;
+  grid-area: footer;
   padding: .5rem;
-  border-top: 1px solid var(--txt);
+  background-color: cyan;
   text-align: center;
 }
