@@ -11,7 +11,7 @@
     <header>
       <a class="logo" href="/">Tubestr <span class="dev-stage">demo</span></a>
       <input class="search-bar" type="search" placeholder="Search" />
-      <nav>
+      <nav class="nav-user">
         <ul>
           <li><button class="btn-theme">Switch theme</button></li>
           <li><button class="btn-upload">Upload</button></li>
@@ -23,50 +23,56 @@
       <div class="content-primary">
         <video
           class="content-player"
-          width="850"
+          width="800"
           height="450"
           controls
           autoplay
         >
           <source src="/assets/test.mp4" type="video/mp4" />
         </video>
-        <section class="content-details">
-          <h1>Hello, world!</h1>
-          <div class="content-actions">
-            <a class="content-author" href="#">stebeus</a>
+        <h1>Hello, world!</h1>
+        <section class="content-header">
+          <div class="content-channel-info">
+            <a class="content-channel" href="#">stebeus</a>
             <button class="btn-follow">Follow</button>
+          </div>
+          <div class="content-actions">
             <button>Like</button>
             <button>Dislike</button>
             <button>Share</button>
           </div>
-          <section class="content-description">
-            <p class="content-views">No views</p>
-            <p class="content-date">2025/10/17</p>
-            <p>This is a test video, sourced locally.</p>
-          </section>
-          <section class="content-comments">
-            <h2>Comments</h2>
-            <p>Work in progress...</p>
-          </section>
+        </section>
+        <section class="content-description">
+          <p class="content-views">No views</p>
+          <p class="content-date">2025/10/17</p>
+          <p>This is a test video, sourced locally.</p>
+        </section>
+        <section class="content-comments">
+          <h2>Comments</h2>
+          <p>Work in progress...</p>
         </section>
       </div>
       <div class="content-secondary">
         <h2>Related</h2>
-        <div class="content-card">
-          <img src="/assets/" alt="Content thumbnail" />
-          <div class="content-info">
+        <div class="card-content">
+          <img
+            class="card-content-thumbnail"
+            src="/assets/"
+            alt="Content thumbnail"
+          />
+          <div class="card-content-info">
             <a href="content.html">Hello, world!</a>
-            <div class="content-meta">
-              <a class="content-author" href="#">stebeus</a>
-              <p class="content-views">No views</p>
-              <p class="content-date">2025/10/17</p>
+            <div class="card-content-meta">
+              <a class="card-content-channel" href="#">stebeus</a>
+              <p class="card-content-views">No views</p>
+              <p class="card-content-date">2025/10/17</p>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <aside>
-      <nav>
+    <aside class="sidebar">
+      <nav class="nav-sidebar">
         <ul>
           <li>
             <a href="/">Home</a>
