@@ -71,6 +71,32 @@ header .search-bar {
   padding-left: .25rem;
 }
 
+main {
+  margin: 1rem;
+  border: 1px solid var(--txt);
+}
+
+main .grid-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  padding: 1em;
+}
+
+main .card-content {
+  border: 1px solid var(--txt);
+}
+
+main .card-content-thumbnail {
+  height: 10em;
+  background-color: var(--txt)
+}
+
+main .card-content-views-date-row {
+  display: flex;
+  gap: 1em
+}
+
 .sidebar {
   grid-area: sidebar;
   padding: .25rem 1rem;
