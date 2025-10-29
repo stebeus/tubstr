@@ -1,0 +1,19 @@
+{
+  "name": "tubstr",
+  "version": "0.0.1",
+  "description": "Nostr and LBRY open source video platform",
+  "license": "MIT",
+  "author": "Stebeus",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-attributes": "^1.0.0"
+  }
+}
