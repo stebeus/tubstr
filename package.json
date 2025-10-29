@@ -2,6 +2,14 @@
   "name": "tubstr",
   "version": "0.0.1",
   "description": "Nostr and LBRY open source video platform",
+  "homepage": "https://github.com/stebeus/tubstr#readme",
+  "bugs": {
+    "url": "https://github.com/stebeus/tubstr/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stebeus/tubstr.git"
+  },
   "license": "MIT",
   "author": "Stebeus",
   "type": "commonjs",
