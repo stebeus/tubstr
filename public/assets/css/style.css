@@ -64,6 +64,30 @@ header div {
   gap: .5rem;
 }
 
+main {
+  margin: 0 auto;
+}
+
+main video {
+  background-color: var(--color-accent);
+}
+
+.primary-content .content-actions,
+.primary-content .content-description,
+.primary-content section {
+  margin-bottom: 1rem;
+}
+
+.primary-content .content-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-meta {
+  display: flex;
+  gap: 1rem;
+}
+
 .sidebar {
   display: none;
 }
