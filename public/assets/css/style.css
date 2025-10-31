@@ -67,3 +67,15 @@ header div {
 .sidebar {
   display: none;
 }
+
+footer {
+  padding: .5rem;
+  background-color: var(--color-accent);
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem
+}
