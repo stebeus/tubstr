@@ -63,3 +63,7 @@ header div {
   align-items: center;
   gap: .5rem;
 }
+
+.sidebar {
+  display: none;
+}
