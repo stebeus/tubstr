@@ -1,7 +1,13 @@
 :root {
-  --clr-surface: hsl(0deg 0 10);
-  --clr-content: hsl(0deg 0 95);
-  --color-accent: red;
+  --clr-surface: hsl(0deg 0 100);
+  --clr-surface-variant: hsl(0deg 0 95);
+  --clr-content-primary: hsl(0deg 0 5);
+  --clr-content-secondary: hsl(0deg 0 30);
+  --clr-surface-inverse: var(--clr-content-primary);
+  --clr-content-inverse: var(--clr-surface);
+  --clr-accent: hsl(15deg 100 50);
+  --clr-link: hsl(240deg 75 50);
+  --clr-link-visited: hsl(270deg 75 50);
 }
 
 *,
@@ -42,6 +48,14 @@ figcaption {
   text-wrap: pretty;
 }
 
+a {
+  color: var(--clr-link);
+}
+
+a:visited {
+  color: var(--clr-link-visited)
+}
+
 img,
 picture,
 svg,
@@ -55,7 +69,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: .5rem;
-  background-color: red;
+  background-color: var(--clr-accent);
 }
 
 header div {
@@ -69,7 +83,7 @@ main {
 }
 
 main video {
-  background-color: var(--color-accent);
+  background-color: var(--clr-accent);
 }
 
 .primary-content .content-actions,
@@ -94,7 +108,7 @@ main video {
 
 footer {
   padding: .5rem;
-  background-color: var(--color-accent);
+  background-color: var(--clr-accent);
 }
 
 footer a {
