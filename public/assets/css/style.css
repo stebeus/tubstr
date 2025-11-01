@@ -26,3 +26,15 @@ header {
   border: none;
   background: none;
 }
+
+footer {
+  padding: .5rem;
+  background-color: white;
+}
+
+footer * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+}
