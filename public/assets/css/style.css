@@ -33,11 +33,11 @@ header {
 .video-actions__rating,
 .video-actions__btn--rate {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 
 .video-actions {
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: .5rem
 }
@@ -59,6 +59,17 @@ header {
 
 .video-actions__btn--rate {
   gap: 1rem;
+}
+
+.comment__actions,
+.comment__btn {
+  display: flex;
+  align-items: center;
+  gap: .5rem
+}
+
+.comment__btn {
+  background: grey;
 }
 
 aside {
