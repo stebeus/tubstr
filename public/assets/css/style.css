@@ -27,6 +27,10 @@ header {
   background: none;
 }
 
+aside {
+  display: none;
+}
+
 footer {
   padding: .5rem;
   background-color: white;
