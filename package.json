@@ -25,6 +25,7 @@
     "prettier-plugin-organize-attributes": "^1.0.0",
     "stylelint": "^16.25.0",
     "stylelint-config-standard": "^39.0.1",
+    "stylelint-config-two-dash-bem": "^1.0.0",
     "stylelint-order": "^7.0.0"
   }
 }

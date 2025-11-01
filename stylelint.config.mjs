@@ -1,6 +1,6 @@
 /** @type {import("stylelint").Config} */
 export default {
-  extends: ["stylelint-config-standard"],
+  extends: ["stylelint-config-standard", "stylelint-config-two-dash-bem"],
   plugins: ["stylelint-order"],
   rules: {
     // Color
