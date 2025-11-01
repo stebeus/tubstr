@@ -27,6 +27,17 @@ header {
   align-items: center;
 }
 
+.video-card__meta-item::before {
+  margin: 0 .5rem;
+  font-size: .75rem;
+  content: "•";
+}
+
+.video-card__meta-item:first-child::before {
+  margin: 0;
+  content: none;
+}
+
 .video-actions,
 .video-actions__channel,
 .video-actions__utilities,
