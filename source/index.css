@@ -1,0 +1,5 @@
+@import '@picocss/pico/css/pico.min.css' layer(framework);
+
+:root {
+	--pico-font-size: 1rem;
+}

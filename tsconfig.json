@@ -1,0 +1,20 @@
+{
+	"include": ["source"],
+	"compilerOptions": {
+		"erasableSyntaxOnly": true,
+		"lib": ["ES2023", "DOM"],
+		"skipLibCheck": true,
+		"target": "es2023",
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo",
+		"types": ["vite/client"],
+
+		/* Bundling */
+		"allowImportingTsExtensions": true,
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js",
+		"moduleDetection": "force",
+		"moduleResolution": "bundler",
+		"noEmit": true,
+		"verbatimModuleSyntax": true
+	}
+}
