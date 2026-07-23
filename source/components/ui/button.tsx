@@ -4,10 +4,5 @@ export type ButtonProps = JSX.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button: ParentComponent<ButtonProps> = (props) => {
 	const merged = mergeProps({ type: 'button' as const }, props);
-
-	return (
-		<button {...merged} type={merged.type}>
-			{merged.children}
-		</button>
-	);
+	return <button {...merged}>{merged.children}</button>;
 };
