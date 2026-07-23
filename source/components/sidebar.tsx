@@ -1,5 +1,7 @@
 import { For } from 'solid-js';
 
+import { ExternalLink } from './ui/index.ts';
+
 // todo: remove mock data
 const follows = ['Mock data 1', 'Mock data 2'];
 
@@ -23,5 +25,9 @@ export const Sidebar = () => (
 				</For>
 			</ul>
 		</nav>
+
+		<footer>
+			<ExternalLink href="https://github.com/stebeus/tubstr">Source code</ExternalLink>
+		</footer>
 	</aside>
 );
